@@ -10,7 +10,7 @@ const copyBtn = document.querySelector("#copy-btn")
 
 
 const host = ""
-const uploadurl= "http://localhost:3300/api/files"
+const uploadurl= "https://easy-sharing.herokuapp.com/api/files"
 
 dropzone.addEventListener("dragover",(e)=>{
     e.preventDefault()
