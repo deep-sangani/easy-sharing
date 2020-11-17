@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy-File Sharing</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <section class="upload-cantainer">
+        <div class="drop-zone" draggable="false">
+            <div class="icon-cantainer">
+                <img class="left" src="/img/file.svg" draggable="false">
+                <img class="center" src="/img/file.svg" draggable="false">
+                <img class="right" src="/img/file.svg" draggable="false">
+            </div>
+            <input type="file" id="file-input"/>
+            <div class="title">Drop your Files here or, <span class="browse-btn">browse</span></div>
+        </div>
+        <div class="progress-container">
+            <div class="bg-progress">
+                <div class="inner-container">
+                    <div class="title">Uploading.....</div>
+                <div class="percent-container">
+                    <span id="percent">0</span>%
+                </div>
+                <div class="progress-dashbar">
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sharing-container">
+            <p class="expire">Link expires in 24 hrs</p>
+            <div class="input-container">
+                <input type="text" id="fileurl" readonly >
+                <img src="/img/copy-icon.svg" alt="" id="copy-btn">
+            </div>
+
+
+            
+        </div>
+
+    </section>
+    <script src="/js/index.js"></script>
+</body>
+</html>
